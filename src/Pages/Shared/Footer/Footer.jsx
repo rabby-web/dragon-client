@@ -18,7 +18,7 @@ const Footer = () => {
                     <ul>
                         <li><a href="#">FAQ</a></li>
                         <li><a href="#">source</a></li>
-                        <li><a href="#">rets</a></li>
+                        <li><a href="#">website</a></li>
                         <li><a href="#">date</a></li>
                     </ul>
                 </div>
@@ -27,7 +27,11 @@ const Footer = () => {
                 <div className="footer-col">
                     <h4>online news</h4>
                     <ul>
-                        <li><a href="#"></a></li>
+                        <li><a href="#">online</a></li>
+                        <li><a href="#">social media</a></li>
+                        <li><a href="#">tv</a></li>
+                        <li><a href="#">news paper</a></li>
+                        <li><a href="#">website</a></li>
                     </ul>
                 </div>
             </div>
