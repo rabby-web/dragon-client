@@ -12,11 +12,11 @@ const LeftSideNav = () => {
 
     return (
         <div>
-            <h2>All Categories: {categories.length}</h2>
+            <h4>All Categories: {categories.length}</h4>
             <div>
                 {
                     categories.map(category => <p key={category.id}> 
-                        <Link>{category.name}</Link>
+                        <Link to={`/category/${category.id}`}>{category.name}</Link>
                     </p>)
                 }
             </div>
