@@ -3,7 +3,7 @@ const Footer = () => {
         <div className="container">
             <div className="row">
                 <div className="footer-col">
-                    <h4>company</h4>
+                    <h5>company</h5>
                     <ul>
                         <li><a href="#">about us</a></li>
                         <li><a href="#">our service</a></li>
@@ -16,7 +16,10 @@ const Footer = () => {
                 <div className="footer-col">
                     <h4>get help</h4>
                     <ul>
-                        <li><a href="#"></a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">source</a></li>
+                        <li><a href="#">rets</a></li>
+                        <li><a href="#">date</a></li>
                     </ul>
                 </div>
             </div>
