@@ -4,7 +4,7 @@ const Category = () => {
     const news = useLoaderData();
     return (
         <div>
-            <h2>This is Category has news: {news.length}</h2>
+            <h2>Category: {news.length}</h2>
         </div>
     );
 };
