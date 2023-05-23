@@ -1,7 +1,11 @@
+import { useLoaderData } from "react-router-dom";
+import Card from 'react-bootstrap/Card';
+
 const News = () => {
+    const news = useLoaderData();
     return (
         <div>
-            <h2>News</h2>
+            <h2>{news.title}</h2>
         </div>
     );
 };
