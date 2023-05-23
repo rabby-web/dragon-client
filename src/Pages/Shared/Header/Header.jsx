@@ -4,8 +4,11 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import LeftSideNav from '../LeftSideNav/LeftSideNav';
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { AuthContext } from '../../../contexts/AuthProvider/AuthProvider';
 
 const Header = () => {
+  const { user } = useContext(AuthContext);
     return (
         <div>
             <Navbar collapseOnSelect className='mb-3' expand="lg" bg="dark" variant="dark">
@@ -29,7 +32,9 @@ const Header = () => {
                       </NavDropdown>
                     </Nav>
                     <Nav>
-                      <Nav.Link href="#deets">More deets</Nav.Link>
+                      <Nav.Link href="#deets">
+                        {user?.displayName}
+                      </Nav.Link>
                       <Nav.Link eventKey={2} href="#memes">
                         Dank memes
                       </Nav.Link>
