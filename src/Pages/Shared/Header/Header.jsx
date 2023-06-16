@@ -4,13 +4,19 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import LeftSideNav from '../LeftSideNav/LeftSideNav';
 import { Link } from 'react-router-dom';
-import { useContext } from 'react';
-import { AuthContext } from '../../../contexts/AuthProvider/AuthProvider';
-import { FaUser } from 'react-icons/fa';
-import Image from 'react-bootstrap/Image';
+// import { useContext } from 'react';
+// import { AuthContext } from '../../../contexts/AuthProvider/AuthProvider';
+// import { FaUser } from 'react-icons/fa';
+// import Image from 'react-bootstrap/Image';
 
 const Header = () => {
-  const { user } = useContext(AuthContext);
+  // const { user, logOut } = useContext(AuthContext);
+
+  // const handleLogOut = () => {
+  //   logOut()
+  //   .then( () => {})
+  //   .catch( error => console.error(error))
+  // }
     return (
         <div>
             <Navbar collapseOnSelect className='mb-3' expand="lg" bg="dark" variant="dark">
@@ -35,14 +41,26 @@ const Header = () => {
                     </Nav>
                     <Nav>
                       <Nav.Link href="#deets">
-                        {user?.displayName}
+                        {/* {
+                          user.uid ?
+                          <>                          
+                          <span>{user?.displayName}</span>
+                          <button onClick={handleLogOut}>Log out</button>
+                          </>
+                          :
+                          <>
+                            <Link to={'/login'}>Login</Link>
+                            <Link to={'/register'}>Register</Link>
+                          </>
+                        } */}
+                        
                       </Nav.Link>
                       <Nav.Link eventKey={2} href="#memes">
-                          {
+                          {/* {
                             user.photoURL2 ?
                             <Image style={{height: '60px'}} roundedCircle src='user.photoURL'></Image>
                             : <FaUser></FaUser>
-                          }
+                          } */}
                       </Nav.Link>
                     </Nav>
                     <div className='d-lg-none'>
